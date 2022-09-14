@@ -6,7 +6,6 @@ from django.core import serializers
 # Create your views here.
 
 data_barang_wishlist = BarangWishlist.objects.all()
-data = BarangWishlist.objects.filter(pk=3)
 context = {
     'list_barang': data_barang_wishlist,
     'nama': 'Yudi :D'
