@@ -15,7 +15,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="nav-item dropdown">
+            <div class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{nama}}
                 </a>
@@ -25,10 +25,11 @@
             </div>
         </div>
     </nav>
-    <h5>Nama: </h5>
-    <p>{{nama}}</p>
+    <div class="d-flex justify-content-center">
+    <h5>Nama:  {{nama}} </h5>
+    </div>
 
-    <table class="table table-striped-columns table-bordered">
+    <table class="table table-striped-columns table-bordered d-flex justify-content-center ">
         <tr>
         <th>Nama Barang</th>
         <th>Harga Barang</th>
@@ -43,7 +44,7 @@
         </tr>
         {% endfor %}
     </table>
-    <h5>Sesi terakhir login: {{ last_login }}</h5>
+    <h5 class="d-flex justify-content-center">Sesi terakhir login: {{ last_login }}</h5>
   </body>
 </html>
     
